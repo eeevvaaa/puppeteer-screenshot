@@ -4,7 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/eeevvaaa/puppeteer-screenshot.git",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.7.1",
     "puppeteer": "^1.15.0"
   }
 }
