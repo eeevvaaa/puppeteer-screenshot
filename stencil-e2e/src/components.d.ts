@@ -40,15 +40,30 @@ export namespace Components {
     */
     'middle'?: string;
   }
+
+  interface NameComponent {
+    /**
+    * Name property
+    */
+    'name': string;
+  }
+  interface NameComponentAttributes extends StencilHTMLAttributes {
+    /**
+    * Name property
+    */
+    'name'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'MyComponent': Components.MyComponent;
+    'NameComponent': Components.NameComponent;
   }
 
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
+    'name-component': Components.NameComponentAttributes;
   }
 
 
@@ -58,12 +73,20 @@ declare global {
     new (): HTMLMyComponentElement;
   };
 
+  interface HTMLNameComponentElement extends Components.NameComponent, HTMLStencilElement {}
+  var HTMLNameComponentElement: {
+    prototype: HTMLNameComponentElement;
+    new (): HTMLNameComponentElement;
+  };
+
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
+    'name-component': HTMLNameComponentElement
   }
 
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
+    'name-component': HTMLNameComponentElement;
   }
 
 
