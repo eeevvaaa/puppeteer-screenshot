@@ -1,12 +1,12 @@
 {
-  "name": "puppeteer-screenshot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/eeevvaaa/puppeteer-screenshot.git",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^24.7.1",
-    "puppeteer": "^1.15.0"
-  }
+	"name": "puppeteer-screenshot",
+	"version": "1.0.0",
+	"main": "screenshot.js",
+	"repository": "https://github.com/eeevvaaa/puppeteer-screenshot.git",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"jest": "^24.7.1",
+		"puppeteer": "^1.15.0"
+	}
 }
