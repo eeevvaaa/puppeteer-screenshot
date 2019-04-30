@@ -15,7 +15,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e --headless --verbose",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "screenshot": "stencil test --e2e --screenshot"
+    "screenshot": "stencil test --e2e --screenshot --verbose"
   },
   "dependencies": {
     "@stencil/sass": "^0.2.1",
